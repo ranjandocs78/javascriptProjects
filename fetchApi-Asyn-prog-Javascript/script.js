@@ -5,6 +5,7 @@ async function fetchData() {
     const data = await response.json();
     return data;
   } catch (error) {
+	  console.log("error logged is ::::: " +error);
     console.error("Error fetching data:", error);
   }
 }
